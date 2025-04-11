@@ -1,0 +1,451 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+
+    <!-- First section start -->
+
+      <div class="lg:px-0 md:px-5 px-5">
+        <!-- lg screen -->
+        <header class="lg:flex md:hidden hidden items-center justify-between py-3 px-10">
+          <!-- banner 1 -->
+            <nav>
+                <ul class="flex gap-5  text-sm text-[#504f4f]">
+                    <li class="hover:text-[#B3B3B3] duration-300"><a href="../src/index2.html">BUY T-SHIRTS</a></li>
+                    <li class="hover:text-[#B3B3B3] duration-300"><a href="../src/index3.html">WOMEN</a></li>
+                    <li class="hover:text-[#B3B3B3] duration-300"><a href="../src/index4.html">MEN</a></li>
+                    <li class="hover:text-[#B3B3B3] duration-300"><a href="../src/index5.html">ABOUT</a></li>
+                    <li class="hover:text-[#B3B3B3] duration-300"><a href="../src/index6.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- banner 2 -->
+            <figure><img src="/logo-regular.png" alt=""></figure>
+            <!-- banner 3 -->
+            <div class="flex gap-8">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <div>
+                    <span>$0.00</span>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+                <span>LOG IN</span>
+            </div>
+        </header>
+
+        <!-- md & sm screen -->
+        <header class="lg:hidden md:flex flex items-center justify-between py-3 px-10">
+            <!-- banner 1 -->
+            <figure><img src="/logo-regular.png" alt="Logo"></figure>
+            <!-- banner 2 -->
+            <div class="flex gap-8">
+                <div>
+                    <span>$0.00</span>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+                <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </header>
+    
+        <!-- side bar -->
+        <div id="sidebar" class="lg:hidden py-10 absolute top-0 left-0 w-full h-screen bg-[#FAEDEB] transform -translate-x-full transition-transform duration-300">
+          <div class="p-5">
+            <span class="text-sm">LOG IN</span>
+            <button id="closeSidebar" class="float-right">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <ul class="gap-5 text-sm text-[#504f4f]">
+            <li class="p-5 border-b-1 border-[#ffff]"><a href="">BUY T-SHIRTS</a></li>
+            <li class="p-5 border-b-1 border-[#ffff]"><a href="">WOMEN</a></li>
+            <li class="p-5 border-b-1 border-[#ffff]"><a href="">MEN</a></li>
+            <li class="p-5 border-b-1 border-[#ffff]"><a href="">ABOUT</a></li>
+            <li class="p-5 border-b-1 border-[#ffff]"><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+    
+        <div class="bg-[#FAEDEB] max-w-[1250px] m-auto md:flex grid"> 
+          <!-- text box -->
+          <div class="content-center lg:px-15 px-6  space-y-16 md:text-left text-center md:py-0 py-10">
+            <span class="text-[#797271]">Women</span>
+            <h1 class="lg:text-6xl text-4xl font-bold pt-5">Slick. Modern. Awesome.</h1>
+            <a href="" class="bg-black px-5 py-2 text-[#ffff] hover:text-[#bab6b5] duration-500">Shop Collection</a>
+          </div>
+          <!-- img box -->
+          <div class="px-8">
+              <img src="/hero.png" alt="" class="bg-center bg-no-repeat bg-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Second section start -->
+
+     <div> 
+      <div class="max-w-[1140px] mx-auto py-10 px-4">
+        <div class="text-center mb-10">
+          <span class="text-sm text-gray-600">Summer Collection</span>
+          <h1 class="text-4xl font-bold">Popular T-Shirts</h1>
+        </div>
+    
+        <!-- Product Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Product Card 1 -->
+          <div>
+            <img src="/product-09-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">MEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 10</h3>
+              <span class="text-xs font-bold text-[#666666]">$33.00 - $36.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Product Card 2 -->
+          <div>
+            <img src="/product-06-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">WOMEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 9</h3>
+              <span class="text-xs font-bold text-[#666666]">$23.00 - $28.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Product Card 3 -->
+          <div>
+            <img src="/product-10-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">MEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 8</h3>
+              <span class="text-xs font-bold text-[#666666]">$21.00 - $25.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Product Card 4 -->
+          <div>
+            <img src="/product-08-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">WOMEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 7</h3>
+              <span class="text-xs font-bold text-[#666666]">$36.00 - $39.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Third section staet -->
+
+    <div class="py-10 lg:px-0 md:px-5 px-5">
+      <div class="max-w-[1140px] mx-auto flex-col md:flex lg:flex-row gap-6">
+        
+        <!-- Image and Text -->
+        <div class="w-full lg:w-1/2">
+          <!-- Image -->
+          <div class="h-[60%] w-full">
+            <img src="/collection-02.jpg" alt="Collection Image" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Text -->
+          <div class="h-[40%] w-full text-white flex flex-col text-center p-6 items-center">
+            <span class="text-sm text-[#777777]">Men</span>
+            <h1 class="text-4xl font-semibold mt-2 text-black mb-6">The base collection - Ideal every day.</h1>
+            <a href="" class="h-10 w-28 p-2 bg-black text-center hover:text-[#c7c3c3] duration-100">Shop Now</a>
+          </div>
+        </div>
+  
+        <!-- Only Image -->
+        <div class="w-full lg:w-1/2">
+          <img src="/collection-01.jpg" alt="Collection Image" class="w-full h-full object-cover">
+        </div>
+
+      </div>
+    </div>
+  
+    <!-- forth section start -->
+
+    <div class="h-screen relative lg:px-0 md:px-5 px-5">
+      <div class="absolute inset-0 bg-center bg-cover bg-no-repeat bg-fixed max-w-[1250px] mx-auto content-center" style="background-image: url('../bg-01.jpg');">
+
+        <div class="absolute inset-0 bg-[#3d3a3a] opacity-35"></div>
+        <div class="relative z-10 text-center w-full sm:w-[75%] md:w-[60%] lg:w-[50%] mx-auto py-10">
+          <span class="text-[#EAE8E7] text-lg block mb-2">New Collection</span>
+          <h1 class="text-[#fff] text-3xl sm:text-4xl font-semibold mb-4">Be different in your own way!</h1>
+          <h3 class="text-[#fff] text-xl sm:text-2xl font-semibold py-3 mb-5">Find your unique style.</h3>
+          <a href="" class="px-8 sm:px-14 py-3 bg-black text-center text-[#fff] hover:text-[#c7c3c3] duration-100">Shop Now</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!--  fifth section start -->
+
+    <div class="py-24 lg:px-0 md:px-5 px-5">
+        <div class="max-w-[1250px] mx-auto md:flex">
+          <div class="w-[100%] md:w-[55%] bg-green-400">
+             <div class="bg-[#FAEDEB] max-h-[700px] relative">
+                <img src="../collection-03.jpg" alt="" class="relative translate-y-[-50px] md:translate-x-0 lg:translate-x-[50px]">
+            </div>
+          </div>
+
+          <div class="w-[100%] md:w-[45%] flex justify-center items-center relative">
+            <div class="w-[100%] lg:w-[80%] text-left left-[-50px] md:absolute space-y-10">
+              <span class="text-[#7E7E7E] text-sm">Women</span>
+              <h2 class="text-4xl font-bold pt-2">Spring Summer Collection</h2>
+              <p class="text-[#7E7E7E] text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id leo tempor, congue justo at, lobortis orci. Aliquam venenatis dui lectus, eu convallis turpis convallis et. Pellentesque.</p>
+              <a href="" class="text-[#ffff] bg-black py-3 px-8">See Whole Collection</a>  
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- sisth section start-->
+ 
+     <div> 
+      <div class="max-w-[1140px] mx-auto py-10 px-4">
+        <div class="text-center mb-10">
+          <span class="text-sm text-gray-600">Summer Collection</span>
+          <h1 class="text-4xl font-bold">Popular T-Shirts</h1>
+        </div>
+    
+        <!-- Product Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Product Card 1 -->
+          <div>
+            <img src="/product-01-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">WOMEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 1</h3>
+              <span class="text-xs font-bold text-[#666666]">$18.00 - $20.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Product Card 2 -->
+          <div>
+            <img src="/product-05-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">MEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 4</h3>
+              <span class="text-xs font-bold text-[#666666]">$17.00 - $19.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Product Card 3 -->
+          <div>
+            <img src="/product-03-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">MEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 6</h3>
+              <span class="text-xs font-bold text-[#666666]">$18.00 - $22.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+          <!-- Product Card 4 -->
+          <div>
+            <img src="/product-08-a-300x366.jpg" alt="Product Image" class="w-full h-72 object-cover">
+            <div class="p-4">
+              <p class="text-gray-500 text-sm">WOMEN</p>
+              <h3 class="text-xl font-semibold">T-Shirt Name 7</h3>
+              <span class="text-xs font-bold text-[#666666]">$36.00 - $39.00</span>  
+
+              <div class="mt-2 flex gap-4">
+                <div class="h-5 w-5 bg-black border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#FAEDEB] border-1 border-[#DFDFDF]"></div>
+                <div class="h-5 w-5 bg-[#ffff] border-1 border-[#DFDFDF]"></div>
+              </div>
+              
+              <div class="mt-2 flex gap-4 text-xs md:flex-nowrap flex-wrap">
+                <div class="p-2 border-1 border-[#DFDFDF]">XS</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">S</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">M</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">L</div>
+                <div class="p-2 border-1 border-[#DFDFDF]">XL</div>
+              </div>
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <!-- seventh section start -->
+
+    <div class="py-5">
+      <div class="max-w-full md:max-w-[50%] mx-auto text-center px-5 sm:px-8 md:px-10">
+          <h1 class="text-3xl font-bold mb-8">Reviews</h1>
+          <a href="" class="underline font-bold text-xs sm:text-lg md:text-lg">“ Very good quality T-shirts and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum!”</a>
+          <div class="mt-8">
+            <i class="fa-solid fa-star text-[#F0AD4E]"></i>
+            <i class="fa-solid fa-star text-[#F0AD4E]"></i>
+            <i class="fa-solid fa-star text-[#F0AD4E]"></i>
+            <i class="fa-solid fa-star text-[#F0AD4E]"></i>
+            <i class="fa-solid fa-star text-[#F0AD4E]"></i>
+          </div>
+          <span class="text-[#989898] text-sm sm:text-base md:text-lg">Jane Oliver</span>
+      </div>
+    </div>
+
+    <!-- eigth section start -->
+
+    <div class="lg:px-0 md:px-5 px-5 py-5">
+        <div class="h-screen max-w-[1140px] flex justify-center items-center mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-4">
+            <!-- image 1 -->
+            <div class="relative">
+                <img src="../cat-men-300x300.jpg" alt="" class="w-full h-auto object-cover">
+                <div class="absolute bottom-10 left-0 right-0 bg-[#F2EBE8] opacity-90 text-center py-1 mx-3 hover:bg-[#ffff] duration-300">
+                    <h2 class="text-black font-bold text-xs">MEN</h2>
+                    <p class="text-gray-600 text-xs">5 Products</p>
+                </div>
+            </div>
+            <!-- image 2 -->
+            <div class="relative">
+              <img src="../cat-women-300x300.jpg" alt="" class="w-full h-auto object-cover">
+              <div class="absolute bottom-10 left-0 right-0 bg-[#F2EBE8] opacity-90 text-center py-1 mx-3 hover:bg-[#ffff] duration-300">
+                  <h2 class="text-black font-bold text-xs">WOMEN</h2>
+                  <p class="text-gray-600 text-xs">5 Products</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- ninth section start -->
+
+    <div class="py-5 lg:px-0 md:px-5 px-5">
+      <div class="max-w-[1250px] mx-auto bg-[#FAEDEB]">
+          <div class="max-w-[50%] mx-auto text-center py-24 content-center">
+              <h1 class="font-bold mb-2 text-lg">Subscribe To Get Offers In Your Inbox</h1>
+              <p class="text-[#807978] text-sm">Lorem ipsum dolor sit amet, adipiscing elit sed do eiusmod condimentum</p>
+              <ul class="text-[#807978] md:flex flex-wrap gap-5 justify-center text-sm py-8 md:space-y-0 space-y-5">
+                <li class="hover:text-black duration-300"><a href="../src/index2.html">Buy T-Shirt</a></li>
+                <li class="hover:text-black duration-300"><a href="../src/index3.html">Women</a></li>
+                <li class="hover:text-black duration-300"><a href="">Men</a></li>
+                <li class="hover:text-black duration-300"><a href="">About</a></li>
+                <li class="hover:text-black duration-300"><a href="">Contact</a></li>
+              </ul>
+              <div class="justify-center flex gap-4">
+                  <div class="py-1 px-3 bg-[#fff] text-black hover:bg-[#FAEDEB] duration-300 cursor-pointer"><i class="fa-brands fa-facebook-f"></i></div>
+                  <div class="py-1 px-3 bg-[#fff] text-black hover:bg-[#FAEDEB] duration-300 cursor-pointer"><i class="fa-brands fa-twitter"></i></div>
+                  <div class="py-1 px-3 bg-[#fff] text-black hover:bg-[#FAEDEB] duration-300 cursor-pointer"><i class="fa-brands fa-instagram"></i></div>
+              </div>
+          </div>
+            <div class="bg-black p-10 text-center">
+                <span class="text-sm text-[#ffff]">Copyright @ 2025 T-Shirts Store | Powered by T-Shirts Store</span>
+            </div>
+      </div>
+    </div>
+
+  <script src="./script.js"></script>
+  </body>
+</html>
